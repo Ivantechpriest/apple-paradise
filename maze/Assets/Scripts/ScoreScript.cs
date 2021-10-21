@@ -1,0 +1,17 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ScoreScript : MonoBehaviour
+{
+    public static int appleCounter = 0;
+    Text score;
+    void Start()
+    {
+        score = GetComponent<Text>();
+    }
+
+    void Update()
+    {
+        score.text = "Score: " + appleCounter;
+    }
+}
